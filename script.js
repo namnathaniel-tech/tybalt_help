@@ -26,22 +26,5 @@ document.addEventListener('DOMContentLoaded', () => {
         dateEl.innerText = `LOG DATE: 1378-08-14 | TIME: ${new Date().toLocaleTimeString('en-US', {hour12: false, hour: '2-digit', minute:'2-digit'})} VERONA STANDARD`;
     }
 
-    // Title Screen Logic
-    const enterBtn = document.getElementById('enter-btn');
-    const titleScreen = document.getElementById('title-screen');
-    const mainApp = document.getElementById('main-app');
-
-    if (enterBtn && titleScreen && mainApp) {
-        enterBtn.addEventListener('click', () => {
-            titleScreen.classList.add('hidden');
-            setTimeout(() => {
-                titleScreen.style.display = 'none';
-                mainApp.style.display = 'flex';
-                // Trigger reflow for transition
-                void mainApp.offsetWidth;
-                mainApp.style.opacity = '1';
-                mainApp.style.transition = 'opacity 1s ease';
-            }, 800); // match CSS transition duration
-        });
-    }
+    // Portal loads immediately
 });
