@@ -16,6 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const dateEl = document.getElementById('current-date');
     if (dateEl) {
-        dateEl.innerText = `LOG DATE: 14th Century | TIME: ${new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit' })} VERONA STANDARD`;
+        dateEl.innerText = "14th Century"
     }
 });
