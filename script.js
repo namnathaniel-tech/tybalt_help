@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const targetId = btn.getAttribute('data-target');
             document.getElementById(targetId).classList.add('active');
+
+            const panelsContainer = document.querySelector('.panels-container');
+            if (panelsContainer) {
+                panelsContainer.scrollTop = 0;
+            }
         });
     });
 
