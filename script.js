@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateEl = document.getElementById('current-date');
     if (dateEl) {
         const updateTime = () => {
-            dateEl.innerText = `LOG DATE: 14th Century | TIME: ${new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit' })} VERONA STANDARD`;
+            dateEl.innerText = `LOG DATE: 14th Century | TIME: ${new Date().toLocaleTimeString('it-IT', { hour12: false, hour: '2-digit', minute: '2-digit' })} VERONA STANDARD`;
         };
         updateTime();
         setInterval(updateTime, 1000);
